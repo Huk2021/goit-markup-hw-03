@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
 </head>
@@ -17,6 +17,7 @@
 
 <!-- Шапка сайта -->
     <header class="header">
+        <div class="container-nav">
         <nav class="navigation">
             <a class="logo link"href="./index.html" ><span class="description-span">Web</span>Studio</a>
             <ul class="menu-list list">
@@ -26,10 +27,12 @@
             </ul>
         </nav>
         <ul class="auth-nav list">
-            <li class="auth-nav-item"><a class="mail-link link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-            <li class="auth-nav-item"><a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="auth-nav-item"><a class="auth-link link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+            <li class="auth-nav-item"><a class="auth-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-        
+        </div>
+     
+      
     </header>
     <main>
         <!-- Герой -->
@@ -40,7 +43,7 @@
         <!-- Преимущества -->
         <section class="advantages-section">
             <h2 hidden>Преимущества</h2>
-        
+            <div class="section"></div>
             <ul class="feature-list list">
                 <li class="feature-list-item">
                     <h3 class="feature-title">Внимание к деталям</h3>
@@ -75,8 +78,10 @@
                     </p>
                  </li>
             </ul>
+            </div>
         </section>
         <!-- Чем мы занимаемся -->
+        <div class="section">
         <section class="promo-section">
             <h2 class="promo-title">Чем мы занимаемся</h2>
         
@@ -92,7 +97,9 @@
                 </li>
             </ul>
         </section>
+        </div>
         <!-- Наша команда -->
+        <div class="section">
         <section class="team-section">
             <h2 class="team-title">Наша команда</h2>
                    
@@ -119,9 +126,11 @@
                 </li>
             </ul>
         </section>
+        </div>
     </main> 
     <!-- Футер -->
     <footer class="footer">
+        <div class="conteiner-footer">
         <a class="logo-futer" href="./index.html"><span class="description-span">Web</span>Studio</a>
         <address class="address">
             <ul class="address-list list">
@@ -140,7 +149,7 @@
             </ul>
              
         </address>
-            
+        </div>
         </footer>
 </body>
     </html>

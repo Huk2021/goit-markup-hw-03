@@ -24,9 +24,49 @@ body {
   font-family: var(--main-font);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /* =========ШАПКА САЙТА========= */
+.container-nav {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  justify-content: center;
+  border: 1px solid #ececec;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+
   font-family: var(--secondary-font);
   font-style: normal;
   color: #000000;
@@ -39,7 +79,19 @@ body {
   color: var(--accent-color);
 }
 
+.menu-list .menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-list {
+  display: flex;
+  margin-left: 93px;
+}
 .menu-list .menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -49,6 +101,20 @@ body {
 .menu-list .menu-link:hover,
 .menu-list .menu-link:focus {
   color: var(--accent-color);
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  padding-right: 15px;
+}
+.auth-nav .auth-nav-item + .auth-nav-item {
+  margin-left: 50px;
+}
+.auth-nav .auth-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav .link {
@@ -64,8 +130,10 @@ body {
 }
 
 /*======== ГЕРОЙ===========*/
+
 .hero {
   background: #2f303a;
+  width: 1200px;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -74,6 +142,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 .modal-button {
   color: var(--primary-white-color);
@@ -81,10 +150,27 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
   background-color: var(--accent-color);
   cursor: pointer;
 }
 /*======= Преимущества =========*/
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+.feature-list {
+  display: flex;
+}
+.feature-list .feature-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .feature-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -101,27 +187,42 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
 }
-
+.promo-link-list {
+  display: flex;
+}
+.promo-link-list .promo-link-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* ==========НАША КОМАНДА==========*/
 .team-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
+}
+.team-link-list {
+  display: flex;
+}
+.team-link-list .team-link-list-item :not(:last-child) {
+  margin-right: 30px;
 }
 .team-subtitle {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 .profession {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -129,7 +230,13 @@ body {
 .footer {
   background: #2f303a;
 }
+.conteiner-footer {
+  padding-top: 60px;
+  padding-bottom: 51px;
+  padding-left: 15px;
+}
 .logo-futer {
+  display: block;
   font-family: var(--secondary-font);
   color: var(--primary-white-color);
   font-weight: 700;
@@ -137,19 +244,23 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
 .address-list-link {
+  display: block;
   color: var(--primary-white-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-bottom: 9px;
 }
 .address-list-link:hover,
 .address-list-link:focus {
   color: var(--accent-color);
 }
+
 .contacts-list-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -162,15 +273,22 @@ body {
 .contacts-list-link:focus {
   color: var(--accent-color);
 }
-
+.address-list-item {
+  padding-bottom: 9px;
+}
 /* ===========ПОРТФОЛИО======= */
-
+.button-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav-button {
   color: var(--title-text-color);
   background: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
 }
