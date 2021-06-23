@@ -137,6 +137,7 @@ ul {
 .hero {
   background: #2f303a;
   width: 1200px;
+  text-align: center;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -146,6 +147,8 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 .modal-button {
   color: var(--primary-white-color);
@@ -158,6 +161,8 @@ ul {
   border-radius: 4px;
   background-color: var(--accent-color);
   cursor: pointer;
+  padding: 10px 32px;
+  margin-bottom: 200px;
 }
 /*======= Преимущества =========*/
 .section {
@@ -295,6 +300,7 @@ ul {
   align-items: center;
   padding-bottom: 50px;
   justify-content: center;
+  margin-left: 280px;
 }
 
 .button-nav .button-nav-item:not(:last-child) {
@@ -310,6 +316,7 @@ ul {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .nav-button:hover,
@@ -338,6 +345,7 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .work-list-text {
   font-size: 16px;
