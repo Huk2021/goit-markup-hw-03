@@ -50,12 +50,15 @@ ul {
 }
 
 /* =========ШАПКА САЙТА========= */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .container-nav {
   display: flex;
   align-items: center;
   width: 1200px;
   justify-content: center;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
@@ -152,6 +155,7 @@ ul {
   letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
+  border-radius: 4px;
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -277,12 +281,18 @@ ul {
   padding-bottom: 9px;
 }
 /* ===========ПОРТФОЛИО======= */
+
 .button-nav {
   display: flex;
   align-items: center;
+  padding-bottom: 50px;
   justify-content: center;
 }
-.nav-button {
+
+.button-nav .button-nav-item:not(:last-child) {
+  margin-right: 8px;
+}
+.button-nav .nav-button {
   color: var(--title-text-color);
   background: #f5f4fa;
   font-weight: 500;
@@ -291,6 +301,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .nav-button:hover,
@@ -298,7 +309,21 @@ ul {
   color: var(--primary-white-color);
   background: var(--accent-color);
 }
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-list .work-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.work-list .work-list-item:nth-child(3n) {
+  margin-right: 0px;
+}
 
+.work-list .work-list-item:nth-last-child(-n + 3n) {
+  margin-bottom: 0px;
+}
 .work-list-title {
   color: var(--title-text-color);
   font-weight: 700;
