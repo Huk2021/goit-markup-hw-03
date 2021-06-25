@@ -16,15 +16,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin-top: 0;
-}
-
+h6,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -69,12 +68,12 @@ section {
 
 /* =========ШАПКА САЙТА========= */
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .portfolio-header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .container-nav {
   display: flex;
@@ -186,6 +185,8 @@ section {
 
 .feature-list {
   display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .feature-list-item {
   flex-basis: calc((100% - 120px) / 4);
@@ -206,6 +207,9 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.advantages {
+  padding-bottom: 0px;
+}
 
 /* =====================ЧЕМ МЫ ЗАНИМАЕМСЯ============ */
 
@@ -216,6 +220,7 @@ section {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .promo-link-list {
   display: flex;
@@ -227,6 +232,9 @@ section {
   margin-left: 30px;
   margin-top: 30px;
 }
+.promo {
+  padding-bottom: 0px;
+}
 /* ==========НАША КОМАНДА==========*/
 .team-title {
   color: var(--title-text-color);
@@ -235,6 +243,7 @@ section {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .team-link-list {
   display: flex;
@@ -254,14 +263,17 @@ section {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .profession {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 10px;
+}
+.team-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* ========ФУТЕР======= */
@@ -374,4 +386,8 @@ section {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
