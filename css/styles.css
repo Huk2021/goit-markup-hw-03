@@ -201,6 +201,7 @@ section {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .feature-description {
   font-size: 14px;
@@ -232,9 +233,7 @@ section {
   margin-left: 30px;
   margin-top: 30px;
 }
-.promo {
-  padding-bottom: 0px;
-}
+
 /* ==========НАША КОМАНДА==========*/
 .team-title {
   color: var(--title-text-color);
